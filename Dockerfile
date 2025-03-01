@@ -40,7 +40,7 @@ RUN echo "$VERSION_ARG" > /run/version
 VOLUME /storage
 EXPOSE 8006 3389
 
-ENV VERSION="xp"
+ENV VERSION="https://releases.ubuntu.com/24.04.2/ubuntu-24.04.2-live-server-amd64.iso"
 ENV RAM_SIZE="2G"
 ENV CPU_CORES="4"
 ENV DISK_SIZE="64G"
