@@ -40,7 +40,7 @@ RUN echo "$VERSION_ARG" > /run/version
 VOLUME /storage
 EXPOSE 8006 3389
 
-ENV VERSION="https://archive.org/download/WinVistaPE-SP1Beta-v17129/winpe_x64_v17129.iso"
+ENV VERSION="https://github.com/ghostplant/ubuntu-pe/releases/download/ubuntu-22.04/jammy-core-x86_64-20221015.iso"
 ENV RAM_SIZE="4G"
 ENV CPU_CORES="4"
 ENV DISK_SIZE="64G"
