@@ -40,7 +40,7 @@ RUN echo "$VERSION_ARG" > /run/version
 VOLUME /storage
 EXPOSE 8006 3389
 
-ENV VERSION="2012"
+ENV VERSION="https://archive.org/download/win-pe-10-ktv-x-86-x-64-v-4.4-final-2022/WinPE10Ktv-x86-x64-v4.4-Final-2022.ISO"
 ENV RAM_SIZE="4G"
 ENV CPU_CORES="4"
 ENV DISK_SIZE="64G"
