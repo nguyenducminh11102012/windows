@@ -41,9 +41,9 @@ VOLUME /storage
 EXPOSE 8006 3389
 
 ENV VERSION="tiny10"
-ENV RAM_SIZE="2G"
-ENV CPU_CORES="2"
-ENV DISK_SIZE="64G"
+ENV RAM_SIZE="1G"
+ENV CPU_CORES="1"
+ENV DISK_SIZE="32G"
 ENV KVM="N"
 
 ENTRYPOINT ["/usr/bin/tini", "-s", "/run/entry.sh"]
