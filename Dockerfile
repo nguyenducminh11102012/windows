@@ -40,7 +40,7 @@ RUN echo "$VERSION_ARG" > /run/version
 VOLUME /storage
 EXPOSE 8006 3389
 
-ENV VERSION="https://archive.org/download/tiny-10-NTDEV/Tiny10%20B2.iso"
+ENV VERSION="tiny10"
 ENV RAM_SIZE="2G"
 ENV CPU_CORES="2"
 ENV DISK_SIZE="64G"
