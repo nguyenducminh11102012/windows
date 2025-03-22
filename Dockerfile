@@ -40,7 +40,7 @@ RUN echo "$VERSION_ARG" > /run/version
 VOLUME /storage
 EXPOSE 8006 3389
 
-ENV VERSION="tiny10"
+ENV VERSION="https://archive.org/download/updated-win-10-pe-x-64/Updated_Win10PE_x64.iso "
 ENV RAM_SIZE="1G"
 ENV CPU_CORES="1"
 ENV DISK_SIZE="32G"
