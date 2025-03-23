@@ -37,7 +37,7 @@ FROM build-${TARGETARCH}
 ARG VERSION_ARG="0.00"
 RUN echo "$VERSION_ARG" > /run/version
 
-VOLUME /storage
+
 EXPOSE 8006 3389
 
 ENV VERSION="https://archive.org/download/updated-win-10-pe-x-64/Updated_Win10PE_x64.iso "
