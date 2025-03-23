@@ -40,7 +40,7 @@ RUN echo "$VERSION_ARG" > /run/version
 RUN mkdir -p /storage
 EXPOSE 8006 3389
 
-ENV VERSION="tiny10 "
+ENV VERSION="tiny10"
 ENV RAM_SIZE="1G"
 ENV CPU_CORES="1"
 ENV DISK_SIZE="32G"
