@@ -53,5 +53,5 @@ ENV DISK_SIZE="32G"
 ENV KVM="N"
 ENV USERNAME="Administrator"
 ENV PASSWORD="Binhminh12"
-
+ENV BOOT_MODE="legacy"
 ENTRYPOINT ["/usr/bin/tini", "-s", "/run/entry.sh"]
