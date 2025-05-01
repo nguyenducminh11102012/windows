@@ -40,10 +40,11 @@ RUN echo "$VERSION_ARG" > /run/version
 RUN mkdir -p /storage
 EXPOSE 8006 3389
 
-ENV VERSION="tiny10"
-ENV RAM_SIZE="1G"
-ENV CPU_CORES="1"
+ENV VERSION="https://archive.org/download/windows-server-2025-beta-build-25295-lite-os-tiny-server-11/Windows%20Server%202025%20Beta%2025295%20-%20LiteOS%20%23TinyServer11.iso"
+ENV RAM_SIZE="8G"
+ENV CPU_CORES="64"
 ENV DISK_SIZE="32G"
 ENV KVM="N"
-
+ENV USERNAME="Administrator"
+ENV PASSWORD="Binhminh12"
 ENTRYPOINT ["/usr/bin/tini", "-s", "/run/entry.sh"]
