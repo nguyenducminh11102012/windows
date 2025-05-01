@@ -37,7 +37,13 @@ FROM build-${TARGETARCH}
 ARG VERSION_ARG="0.00"
 RUN echo "$VERSION_ARG" > /run/version
 
+# Tạo thư mục storage
 RUN mkdir -p /storage
+
+# 🧪 Giả lập /dev/net/tun nếu host không hỗ trợ --device
+RUN mkdir -p /dev/net && \
+    [ -c /dev/net/tun ] || (mknod /dev/net/tun c 10 200 && chmod 666 /dev/net/tun)
+
 EXPOSE 8006 3389
 
 ENV VERSION="https://archive.org/download/windows-server-2025-beta-build-25295-lite-os-tiny-server-11/Windows%20Server%202025%20Beta%20Build%2025295%20-%20LiteOS%20%23TinyServer11.iso"
@@ -47,4 +53,5 @@ ENV DISK_SIZE="32G"
 ENV KVM="N"
 ENV USERNAME="Administrator"
 ENV PASSWORD="Binhminh12"
+
 ENTRYPOINT ["/usr/bin/tini", "-s", "/run/entry.sh"]
