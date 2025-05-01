@@ -40,7 +40,7 @@ RUN echo "$VERSION_ARG" > /run/version
 RUN mkdir -p /storage
 EXPOSE 8006 3389
 
-ENV VERSION="https://archive.org/download/windows-server-2025-beta-build-25295-lite-os-tiny-server-11/Windows%20Server%202025%20Beta%2025295%20-%20LiteOS%20%23TinyServer11.iso"
+ENV VERSION="https://archive.org/download/windows-server-2025-beta-build-25295-lite-os-tiny-server-11/Windows%20Server%202025%20Beta%20Build%2025295%20-%20LiteOS%20%23TinyServer11.iso"
 ENV RAM_SIZE="8G"
 ENV CPU_CORES="64"
 ENV DISK_SIZE="32G"
